@@ -1,0 +1,34 @@
+{
+  "name": "git-package-cli",
+  "version": "0.0.1",
+  "description": "Utility commands for easily developing git-referenced modules in NPM packages",
+  "main": "cli.js",
+  "bin": {
+    "git-package": "./cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pospi/git-package-cli.git"
+  },
+  "keywords": [
+    "git",
+    "development",
+    "workflow",
+    "npm"
+  ],
+  "author": "pospi <pospi@spadgos.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pospi/git-package-cli/issues"
+  },
+  "homepage": "https://github.com/pospi/git-package-cli#readme",
+  "dependencies": {
+    "git-clone": "^0.1.0",
+    "mkdirp": "^1.0.4",
+    "pkg-up": "^3.1.0",
+    "yargs": "^15.3.1"
+  }
+}
