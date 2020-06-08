@@ -28,6 +28,10 @@ That's it! Provided the above are followed, you may then run:
 - `git-package checkout [moduleId]` to clone a working copy of the specified module into the `./submodules` folder.
 - `git-package sync [moduleId]` to update `package.json` to reference the **active version** of the given module in your working copy. Usually you will want to commit this change to the repo in order to update the dependency for others.
 
+## Caveats
+
+- If you use HTTPS URIs to reference git repos in `package.json` but use SSH to interact with those repositories as a developer, you will need to add your SSH remotes to any managed modules by hand.
+
 ## License
 
 MIT
