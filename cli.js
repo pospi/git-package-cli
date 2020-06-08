@@ -9,7 +9,7 @@
  */
 
 const runCheckoutModule = require('./runCheckoutModule')
-// const runSyncModule = require('./runSyncModule')
+const runSyncModule = require('./runSyncModule')
 const { processAndVerify } = require('./verifyPackageRef')
 
 function addModuleIdArg(yargs) {
@@ -28,8 +28,7 @@ require('yargs') // eslint-disable-line
   .command('sync [moduleId]', 'Updates the git URI for a referenced git module to match the currently active commit in its local working copy', (yargs) => {
     addModuleIdArg(yargs)
   }, (argv) => {
-    console.error('NOT YET IMPLEMENTED')
-    // runSyncModule(argv.moduleId, argv)
+    runSyncModule(argv.moduleId, argv)
   })
   .option('localdir', {
     alias: 'd',
