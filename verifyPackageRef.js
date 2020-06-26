@@ -44,7 +44,7 @@ function processAndVerify(moduleId, cwd, verbose) {
 
 module.exports = {
   processAndVerify,
-  getModuleGitUri: () => TARGET_MODULE_GIT_URI,
+  getModuleGitUri: () => TARGET_MODULE_GIT_URI.replace(/^git\+/, ''),
   getPackageRootDir: () => PACKAGE_ROOT_DIR,
   getPackageFileContents: () => PACKAGE_FILE_CONTENTS,
   getDefaultWorkingDir: () => DEFAULT_WORKING_DIR,
